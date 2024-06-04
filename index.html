@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+        /* Additional CSS styles specific to certifications section */
+        .certification-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .certification-badge {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .certification-text {
+            flex: 1;
+        }
+        .certification-text h2 {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<nav id="desktop-nav">
+    <div class="logo">Madhurima Sai Veeramachaneni</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Madhurima Sai</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+</nav>
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/madveera.jpg" alt="Madhurima Sai Veeramachaneni picture" class="about-pic"/>
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Madhurima Sai Veeramachaneni</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/Madhurima Sai Veeramachaneni Resume.pdf')">
+                Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="scrollToSection('#contact')">
+                Contact Info
+            </button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/madveera/'"/>
+            <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/madhu3ima'"/>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+            <img src="./assets/madveera1.jpeg" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+                    <h3>Experience</h3>
+                    <p>2 years <br />Full Stack Development</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Education icon" class="icon"/>
+                    <h3>Education</h3>
+                    <p>CSE. Bachelor Degree<br />CS. Master Degree</p>
+                </div>
+            </div>
+            <div class="text-container">
+                <p>
+                    Passionate and versatile Computer Science professional with a Master's in Computer Science from
+                    Indiana University Bloomington. Experienced in both research and development. Proficient in a wide range of
+                    technologies, including Java, JavaScript, ReactJS, SQL, Spring and more. Excited about innovation,
+                    collaboration, and the limitless possibilities in the world of technology. Let's connect and
+                    explore opportunities!
+                </p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#experience')"/>
+</section>
+<section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <h2 class="experience-sub-title">Web Technologies and Languages</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>ReactJs</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Spring Boot</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>AWS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Express</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>NodeJS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Java</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Python</h3>
+                            <p>Experienced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>C++</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>C</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+
+
+                </div>
+            </div>
+
+            <div class="details-container">
+                <h2 class="experience-sub-title">Development Tools and Databases</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>IntelliJ</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon"
+                        class="icon"/>
+                        <div>
+                            <h3>VS Code</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Docker</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Jenkins</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Git</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>Maven</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>MySQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>MongoDB</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                        <div>
+                            <h3>PostgreSQL</h3>
+                            <p>Intermediate</p>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#certifications')"/>
+        </section>
+        <section id="certifications">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+                <div class="certification-container">
+                    <img src="./assets/AWS dev associate.jpg" alt="AWS Certified Developer" class="certification-badge"/>
+                    <div class="certification-text">
+                        <h2>AWS Certified Developer</h2>
+                        <p>Skills learned in AWS Certified Developer Associate DVA-C02 include developing and deploying cloud-native applications on AWS using services like Lambda, API Gateway, S3, and DynamoDB.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container">
+                <div class="certification-container">
+                    <img src="./assets/AWS cloud prac.JPG" alt="AWS Cloud Practitioner" class="certification-badge"/>
+                    <div class="certification-text">
+                        <h2>AWS Cloud Practitioner Foundational</h2>
+                        <p>Skills learned in AWS Certified Cloud Practitioner include understanding core AWS services, basic cloud architecture principles, security and compliance, and the fundamentals of deploying.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#projects')"/>
+        </section>
+        <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/jumpCounter3.jpg" alt="Project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Jump Counter React App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/madhu3ima/JumpCounter'">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/React App orig.png" alt="Project 2" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">React Messaging App</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/madhu3ima/React-Messaging-App'">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="scrollToSection('#contact')"/>
+        </section>
+        <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+            <p><a href="mailto:vmadhurimasai@gmail.com">vmadhurimasai@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/madveera/">LinkedIn</a></p>
+        </div>
+        </div>
+        </section>
+        <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        </footer>
+        <script src="script.js"></script>
+        <script>
+            // Scroll to section function
+            function scrollToSection(sectionId) {
+                var section = document.querySelector(sectionId);
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+        </body>
+        </html>
+        
